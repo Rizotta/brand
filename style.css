@@ -186,6 +186,16 @@ button::-moz-focus-outer, button::-moz-focus-inner {
 	background-position: center -52px;
 	display: flex;
 	align-items: flex-start;
+	-webkit-transition: background-position-y 1500ms linear;
+	-moz-transition: background-position-y 1500ms linear;
+	-o-transition: background-position-y 1500ms linear;
+	-ms-transition: background-position-y 1500ms linear;
+	transition: background-position-y 1500ms linear;
+}
+
+.promo:hover {
+	background-position-y: -32px;
+	-ms-background-position-y: -32px;
 }
 
 .promo__content {
@@ -225,14 +235,16 @@ button::-moz-focus-outer, button::-moz-focus-inner {
 	margin-bottom: 20px;
 	padding-top: 26px;
 	display: block;
+	background-size: 100%;
+	-webkit-transition: background-size 1500ms linear;
+	-moz-transition: background-size 1500ms linear;
+	-o-transition: background-size 1500ms linear;
+	-ms-transition: background-size 1500ms linear;
+	transition: background-size 1500ms linear;
 }
 
 .category__item:hover {
-	background-size: 101% ;
-}
-
-.category__item:active {
-	background-size: 100% ;
+	background-size: 105% ;
 }
 
 .category__left-men, .category__right-kids {
@@ -313,6 +325,8 @@ button::-moz-focus-outer, button::-moz-focus-inner {
 
 .featured__product {
 	margin-bottom: 31px;
+	background-color: #fff;
+	cursor: pointer;
 }
 
 .featured__product:hover {
@@ -324,7 +338,8 @@ button::-moz-focus-outer, button::-moz-focus-inner {
 }
 
 .featured__product-hover {
-	display: none;
+	visibility: hidden;
+	opacity: 0;
 	position: absolute;
 	top: 0;
 	background-color: rgba(58, 56, 56, 0.83);
@@ -332,10 +347,12 @@ button::-moz-focus-outer, button::-moz-focus-inner {
 	width: 100%;
 	padding-top: 98px;
 	padding-left: 70px;
+	transition: visibility 0ms, opacity 500ms linear;
 }
 
 .featured__product:hover .featured__product-hover {
-	display: block;
+	visibility: visible;
+	opacity: 1;
 }
 
 .featured__product-hover-button {
