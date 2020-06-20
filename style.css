@@ -113,6 +113,10 @@ button::-moz-focus-outer, button::-moz-focus-inner {
 	align-items: center;
 }
 
+.header__left {
+	position: relative;
+}
+
 .header__form {
 	display: flex;
 	align-items: center;
@@ -143,6 +147,49 @@ button::-moz-focus-outer, button::-moz-focus-inner {
 	font-size: 14px;
 	color: #838383;
 }
+
+/* --- start Browse-dropdown --- */
+
+.header__browse:hover .header__browse-dropdown {
+	display: block;
+}
+
+.header__browse-dropdown {
+	min-width: 262px;
+	position: absolute;
+	z-index: 1;
+	top: 43px;
+	left: 206px;
+	padding: 6px 16px;
+	background: #ffffff;
+	display: none;
+}
+
+.header__dropdown-h {
+	font-size: 14px;
+	color: #232323;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	border-bottom: 1px solid #e8e8e8;
+	padding-top: 10px;
+	padding-bottom: 7px;
+	text-align: left;
+}
+
+.header__menu-link {
+	font-size: 14px;
+	color: #4f4f4f;
+	letter-spacing: 0.03em;
+	line-height: 28px;
+	display: block;
+	text-align: left;
+	padding: 0 7px;
+}
+
+.header__menu-link:hover {
+	background-color: #eee;
+}
+/* --- end Browse-dropdown --- */
 
 .header__input {
 	height: 38px;
