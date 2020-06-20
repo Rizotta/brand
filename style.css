@@ -53,7 +53,7 @@ button::-moz-focus-outer, button::-moz-focus-inner {
 }
 
 /* -- Active elements -- */
-.header__browse:active, .header__search:active .header__search-img,
+.header__search:active .header__search-img,
 .header__cart:active .header__cart-img {
 	padding-top: 2px;
 }
@@ -135,11 +135,11 @@ button::-moz-focus-outer, button::-moz-focus-inner {
 	cursor: pointer;
 }
 
-.header__browse:hover, .header__search:hover {
+.header__browse:hover ,.header__search:hover {
 	box-shadow: 0 0 5px #ddd;
 }
 
-.header__browse:active, .header__search:active {
+.header__search:active {
 	box-shadow: none;
 }
 
@@ -149,9 +149,8 @@ button::-moz-focus-outer, button::-moz-focus-inner {
 }
 
 /* --- start Browse-dropdown --- */
-
 .header__browse:hover .header__browse-dropdown {
-	display: block;
+	visibility: visible;
 }
 
 .header__browse-dropdown {
@@ -162,10 +161,12 @@ button::-moz-focus-outer, button::-moz-focus-inner {
 	left: 206px;
 	padding: 6px 16px;
 	background: #ffffff;
-	display: none;
+	visibility: hidden;
 }
 
-.header__dropdown-h {
+.header__menu-h {
+	display: block;
+	text-align: left;
 	font-size: 14px;
 	color: #232323;
 	letter-spacing: 0.03em;
@@ -173,7 +174,6 @@ button::-moz-focus-outer, button::-moz-focus-inner {
 	border-bottom: 1px solid #e8e8e8;
 	padding-top: 10px;
 	padding-bottom: 7px;
-	text-align: left;
 }
 
 .header__menu-link {
@@ -186,8 +186,12 @@ button::-moz-focus-outer, button::-moz-focus-inner {
 	padding: 0 7px;
 }
 
-.header__menu-link:hover {
-	background-color: #eee;
+.header__menu-link:hover, .header__menu-h:hover {
+	color: #f16d7f;
+}
+
+.header__menu-link:active, .header__menu-h:active{
+	transform: translateY(2px);
 }
 /* --- end Browse-dropdown --- */
 
@@ -251,7 +255,8 @@ button::-moz-focus-outer, button::-moz-focus-inner {
 	list-style-type: none;
 	display: flex;
 	justify-content: center;
-	flex-wrap: wrap
+	flex-wrap: wrap;
+	padding-bottom: 2px;
 }
 
 .menu__link {
@@ -259,16 +264,17 @@ button::-moz-focus-outer, button::-moz-focus-inner {
 	font-weight: bold;
 	color: #222222;
 	text-transform: uppercase;
-	padding: 19px;
+	padding: 19px 19px 16px;
 	display: block;
+	border-bottom: 3px solid #fff;
 }
 
 .menu__link:hover {
-	transform: translateY(2px);
+	border-bottom: 3px solid #ef5b70;
 }
 
 .menu__link:active {
-	color: #222222;
+	transform: translateY(2px);
 }
 
 /* ---------------------- PAGE INDEX ---------------------- */
@@ -870,17 +876,25 @@ button::-moz-focus-outer, button::-moz-focus-inner {
 }
 
 .sidebar__menu {
-	margin: 22px 17px;
+	margin: 22px 10px;
 }
 
 .sidebar__menu-link {
 	color: #6f6e6e;
-	padding: 7px 0;
+	padding: 7px;
 	display: block;
 }
 
 .sidebar__menu-link:hover {
-	text-decoration: underline;
+	color: #f16d7f;
+}
+
+.sidebar__menu-link:active {
+	transform: translateY(2px);
+}
+
+.catalog__right {
+	width: 846px;
 }
 
 /* ------ FILTER ------ */
@@ -890,6 +904,7 @@ button::-moz-focus-outer, button::-moz-focus-inner {
 	justify-content: space-between;
 	width: 848px;
 	margin-top: 12px;
+	margin-bottom: 32px;
 }
 
 .filter__h3 {
@@ -928,20 +943,90 @@ button::-moz-focus-outer, button::-moz-focus-inner {
 }
 
 .filter__trending-link:hover {
-	text-decoration: underline;
+	color: #f16d7f;
+}
+
+.filter__trending-link:active {
+	transform: translateY(2px);
 }
 
 /* - FILTER-SIZE - */
 
-.filter__size-table {
-	width: 260px;
-	margin-top: -5px;
+.filter__size-content {
+	width: 285px;
+	display: flex;
+	flex-wrap: wrap;
 }
 
-.filter__size-td {
-	width: 25px;
-	padding: 4px 0;
+.filter__size-item {
+	width: 70px;
+	padding: 4px 0 4px 24px;
 	font-size: 14px;
 	color: #6f6e6e;
 	text-transform: uppercase;
+	position: relative;
+}
+
+/* -- start Change Checkbox -- */
+.filter__checkbox {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+	margin: 10px 0 0 20px;
+}
+
+.filter__checkbox-text::before {
+	content: '';
+	position: absolute;
+	top: 4px;
+	left: 0;
+	width: 14px;
+	height: 14px;
+	background: #fff;
+	border: 1px solid #999;
+}
+.filter__checkbox:checked + .filter__checkbox-text::before {
+	background: #f16d7f;
+}
+
+.filter__checkbox:hover + .filter__checkbox-text::before {
+	border: 1px solid #f16d7f;
+}
+
+.filter__size-item:hover .filter__checkbox-text {
+	color: #f16d7f;
+}
+/* -- end Change Checkbox -- */
+
+/* ------ SORT ------ */
+
+.sort {
+	height: 50px;
+	background-color: #f3f3f3;
+	display: flex;
+	margin-bottom: 48px;
+}
+
+.sort__item {
+	display: flex;
+	align-items: center;
+	margin: 10px;
+}
+
+.sort__text {
+	border: 1px solid #ebebeb;
+	background-color: #ffffff;
+	padding: 0 10px;
+	font-size: 14px;
+	color: #6f6e6e;
+	line-height: 26px;
+	cursor: pointer;
+}
+
+.sort__text:hover {
+	color: #f16d7f;
+}
+
+.sort__text .fas {
+	padding-left: 16px;
 }
