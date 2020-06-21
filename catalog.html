@@ -16,7 +16,7 @@
 				<img class="logo__img" src="img/logo.png" alt="logo">BRAN<span class="logo__letter-last">D</span>
 			</a>
 			<form class="header__form">
-				<button class="header__browse">Browse <i class="fas fa-sort-down"></i>
+				<div class="header__browse">Browse <i class="fas fa-sort-down"></i>
 					<nav class="header__browse-dropdown">
 						<ul class="header__dropdown-menu">
 							<li class="header__menu-list"><a href="#" class="header__menu-h">WOMEN</a></li>
@@ -40,7 +40,7 @@
 							<li class="header__menu-list"><a href="#" class="header__menu-link">Jackets/vests</a></li>
 						</ul>
 					</nav>
-				</button>
+				</div>
 				<input class="header__input" type="text" placeholder="Search for Item...">
 				<button class="header__search"><img src="img/search.png" class="header__search-img" alt="search"></button>
 			</form>
@@ -143,25 +143,104 @@
 			</div>
 			<div class="sort">
 				<div class="sort__item">
-					<button class="sort__text">
-						Sort By
-					</button>
 					<div class="sort__text">
-						Name <i class="fas fa-sort-down"></i>
+						Sort By
 					</div>
+					<select name="sort__select" class="sort__select">
+						<option value="Name">Name</option>
+						<option value="Price">Price</option>
+						<option value="Newest">Newest</option>
+						<option value="Best-Match">Best Match</option>
+					</select>
 				</div>
 				<div class="sort__item">
 					<div class="sort__text">
 						Show
 					</div>
-					<div class="sort__text">
-						09 <i class="fas fa-sort-down"></i>
-					</div>
+					<select name="sort__select" class="sort__select">
+						<option value="09">09</option>
+						<option value="15">15</option>
+						<option value="30">30</option>
+						<option value="30">30</option>
+					</select>
+<!--					<div class="sort__text">-->
+<!--						09 <i class="fas fa-sort-down"></i>-->
+<!--					</div>-->
 				</div>
 			</div>
 			<div class="product__catalog">
 				<div class="product__item">
-					<a href="#"><img class="product__item-img" src="img/product1.png" alt="product-image"></a>
+					<a href="product.html"><img class="product__item-img" src="img/product_man1.png" alt="product-image"></a>
+					<div class="product__item-text">
+						<a href="product.html" class="product__item-name">Mango People T-shirt</a>
+						<p class="product__item-price">$52.00</p>
+						<p class="product__item-rating">
+							<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></p>
+					</div>
+					<a href="#" class="product__add">Add to Cart</a>
+				</div>
+				<div class="product__item">
+					<a href="product.html"><img class="product__item-img" src="img/product_man2.png" alt="product-image"></a>
+					<div class="product__item-text">
+						<a href="product.html" class="product__item-name">Mango People T-shirt</a>
+						<p class="product__item-price">$52.00</p>
+						<p class="product__item-rating">
+							<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></p>
+					</div>
+					<a href="#" class="product__add">Add to Cart</a>
+				</div>
+				<div class="product__item">
+					<a href="product.html"><img class="product__item-img" src="img/product_man3.png" alt="product-image"></a>
+					<div class="product__item-text">
+						<a href="product.html" class="product__item-name">Mango People T-shirt</a>
+						<p class="product__item-price">$52.00</p>
+						<p class="product__item-rating">
+							<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></p>
+					</div>
+					<a href="#" class="product__add">Add to Cart</a>
+				</div>
+				<div class="product__item">
+					<a href="product.html"><img class="product__item-img" src="img/product_man4.png" alt="product-image"></a>
+					<div class="product__item-text">
+						<a href="product.html" class="product__item-name">Mango People T-shirt</a>
+						<p class="product__item-price">$52.00</p>
+						<p class="product__item-rating">
+							<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></p>
+					</div>
+					<a href="#" class="product__add">Add to Cart</a>
+				</div>
+				<div class="product__item">
+					<a href="product.html"><img class="product__item-img" src="img/product_man5.png" alt="product-image"></a>
+					<div class="product__item-text">
+						<a href="product.html" class="product__item-name">Mango People T-shirt</a>
+						<p class="product__item-price">$52.00</p>
+						<p class="product__item-rating">
+							<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></p>
+					</div>
+					<a href="#" class="product__add">Add to Cart</a>
+				</div>
+				<div class="product__item">
+					<a href="product.html"><img class="product__item-img" src="img/product_man6.png" alt="product-image"></a>
+					<div class="product__item-text">
+						<a href="product.html" class="product__item-name">Mango People T-shirt</a>
+						<p class="product__item-price">$52.00</p>
+						<p class="product__item-rating">
+							<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></p>
+					</div>
+					<a href="#" class="product__add">Add to Cart</a>
+				</div>
+				<div class="product__item">
+					<a href="product.html"><img class="product__item-img" src="img/product_man7.png" alt="product-image"></a>
+					<div class="product__item-text">
+						<a href="product.html" class="product__item-name">Mango People T-shirt</a>
+						<p class="product__item-price">$52.00</p>
+						<p class="product__item-rating">
+							<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></p>
+					</div>
+					<a href="#" class="product__add">Add to Cart</a>
+				</div>
+				<div class="product__item">
+					<a href="#"><img class="product__item-img" src="img/product_man8.png" alt="product-image"></a>
 					<div class="product__item-text">
 						<a href="#" class="product__item-name">Mango People T-shirt</a>
 						<p class="product__item-price">$52.00</p>
@@ -171,69 +250,9 @@
 					<a href="#" class="product__add">Add to Cart</a>
 				</div>
 				<div class="product__item">
-					<a href="#"><img class="product__item-img" src="img/product2.png" alt="product-image"></a>
+					<a href="product.html"><img class="product__item-img" src="img/product_man9.png" alt="product-image"></a>
 					<div class="product__item-text">
-						<a href="#" class="product__item-name">Mango People T-shirt</a>
-						<p class="product__item-price">$52.00</p>
-						<p class="product__item-rating">
-							<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></p>
-					</div>
-					<a href="#" class="product__add">Add to Cart</a>
-				</div>
-				<div class="product__item">
-					<a href="#"><img class="product__item-img" src="img/product3.png" alt="product-image"></a>
-					<div class="product__item-text">
-						<a href="#" class="product__item-name">Mango People T-shirt</a>
-						<p class="product__item-price">$52.00</p>
-						<p class="product__item-rating">
-							<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></p>
-					</div>
-					<a href="#" class="product__add">Add to Cart</a>
-				</div>
-				<div class="product__item">
-					<a href="#"><img class="product__item-img" src="img/product4.png" alt="product-image"></a>
-					<div class="product__item-text">
-						<a href="#" class="product__item-name">Mango People T-shirt</a>
-						<p class="product__item-price">$52.00</p>
-						<p class="product__item-rating">
-							<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></p>
-					</div>
-					<a href="#" class="product__add">Add to Cart</a>
-				</div>
-				<div class="product__item">
-					<a href="#"><img class="product__item-img" src="img/product5.png" alt="product-image"></a>
-					<div class="product__item-text">
-						<a href="#" class="product__item-name">Mango People T-shirt</a>
-						<p class="product__item-price">$52.00</p>
-						<p class="product__item-rating">
-							<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></p>
-					</div>
-					<a href="#" class="product__add">Add to Cart</a>
-				</div>
-				<div class="product__item">
-					<a href="#"><img class="product__item-img" src="img/product6.png" alt="product-image"></a>
-					<div class="product__item-text">
-						<a href="#" class="product__item-name">Mango People T-shirt</a>
-						<p class="product__item-price">$52.00</p>
-						<p class="product__item-rating">
-							<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></p>
-					</div>
-					<a href="#" class="product__add">Add to Cart</a>
-				</div>
-				<div class="product__item">
-					<a href="#"><img class="product__item-img" src="img/product7.png" alt="product-image"></a>
-					<div class="product__item-text">
-						<a href="#" class="product__item-name">Mango People T-shirt</a>
-						<p class="product__item-price">$52.00</p>
-						<p class="product__item-rating">
-							<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></p>
-					</div>
-					<a href="#" class="product__add">Add to Cart</a>
-				</div>
-				<div class="product__item">
-					<a href="#"><img class="product__item-img" src="img/product8.png" alt="product-image"></a>
-					<div class="product__item-text">
-						<a href="#" class="product__item-name">Mango People T-shirt</a>
+						<a href="product.html" class="product__item-name">Mango People T-shirt</a>
 						<p class="product__item-price">$52.00</p>
 						<p class="product__item-rating">
 							<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></p>
@@ -241,8 +260,47 @@
 					<a href="#" class="product__add">Add to Cart</a>
 				</div>
 			</div>
+			<div class="product__pagination">
+				<nav class="pagination">
+					<ul class="pagination__menu">
+						<li class="pagination__list"><a href="#" class="pagination__link">&lt;</a></li>
+						<li class="pagination__list"><a href="#" class="pagination__link pagination__link-active">1</a></li>
+						<li class="pagination__list"><a href="#" class="pagination__link">2</a></li>
+						<li class="pagination__list"><a href="#" class="pagination__link">3</a></li>
+						<li class="pagination__list"><a href="#" class="pagination__link">4</a></li>
+						<li class="pagination__list"><a href="#" class="pagination__link">5</a></li>
+						<li class="pagination__list"><a href="#" class="pagination__link">6</a></li>
+						<li class="pagination__list"><a href="#" class="pagination__link">...</a></li>
+						<li class="pagination__list"><a href="#" class="pagination__link">20</a></li>
+						<li class="pagination__list"><a href="#" class="pagination__link pagination__link-active">&gt;</a></li>
+					</ul>
+				</nav>
+				<button class="button">View All</button>
+			</div>
 		</div>
 	</main>
+	<div class="catalog__banner center">
+		<div class="banner__right">
+			<article class="banner__article banner__article-1">
+				<div class="banner__article-container">
+					<h4 class="banner__article-h4">Free Delivery</h4>
+					<p class="banner__article-p">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+				</div>
+			</article>
+			<article class="banner__article banner__article-2">
+				<div class="banner__article-container">
+					<h4 class="banner__article-h4">Sales & discounts</h4>
+					<p class="banner__article-p">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+				</div>
+			</article>
+			<article class="banner__article banner__article-3">
+				<div class="banner__article-container">
+					<h4 class="banner__article-h4">Quality assurance</h4>
+					<p class="banner__article-p">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+				</div>
+			</article>
+		</div>
+	</div>
 	<div class="subscribe center">
 		<div class="subscribe__item">
 			<div class="subscribe__article">
@@ -269,7 +327,7 @@
 	</div>
 	<div class="pre-footer center">
 		<div class="pre-footer__text">
-			<a href="#" class="logo">
+			<a href="index.html" class="logo">
 				<img class="logo__img" src="img/logo.png" alt="logo">BRAN<span class="logo__letter-last">D</span>
 			</a>
 			<p class="pre-footer__text-p">Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.</p>
