@@ -1,2 +1,2 @@
-# site3
-HTML-markup practices
+# Brand
+Online-store, HTML-markup practices.
