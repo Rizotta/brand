@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Brand | Catalog</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="style/style.css">
 	<link href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
 </head>
@@ -46,7 +46,40 @@
 			</form>
 		</div>
 		<div class="header__right">
-			<a href="#" class="header__cart"><img class="header__cart-img" src="img/cart.png" alt="cart"></a>
+			<div class="header__cart-container">
+				<a href="#" class="header__cart">
+					<img class="header__cart-img" src="img/cart.png" alt="cart">
+				</a>
+				<div class="cart_dropdown">
+					<div class="good_in_cart">
+						<img src="img/cart_good1.png" alt="good 1" class="good_minifoto">
+						<div class="cart_good_description">
+							<span class="good_in_cart_caption">Rebox Zane</span><br>
+							<img src="img/fivestars.png" alt="stars" class="five_stars"><br>
+							<span class="cart_good_price">1 X $250</span>
+						</div>
+						<div class="cart_delete_cross">
+							<a href="#"><img src="img/x.png" alt="delete_good"></a>
+						</div>
+					</div>
+					<div class="good_in_cart">
+						<img src="img/cart_good2.png" alt="good 2" class="good_minifoto">
+						<div class="cart_good_description">
+							<span class="good_in_cart_caption">Rebox Zane</span><br>
+							<img src="img/fivestars.png" alt="stars" class="five_stars"><br>
+							<span class="cart_good_price">1 X $250</span>
+						</div>
+						<div class="cart_delete_cross">
+							<a href="#"><img src="img/x.png" alt="delete_good"></a>
+						</div>
+					</div>
+					<div class="cart_total">
+						TOTAL&nbsp;:<span id="total_cost"> $500</span>
+					</div>
+					<div class="btn_cart">CHECKOUT</div>
+					<div class="btn_cart">GO TO CART</div>
+				</div>
+			</div>
 			<button class="button header__button">My account <i class="fas fa-sort-down"></i></button>
 		</div>
 	</header>
@@ -60,6 +93,51 @@
 			<li class="menu__list"><a href="#" class="menu__link">Featured</a></li>
 			<li class="menu__list"><a href="#" class="menu__link">Hot</a></li>
 			<li class="menu__list"><a href="#" class="menu__link">Deals</a></li>
+			<div class="menu__mega">
+				<div class="menu__mega-item">
+					<ul>
+						<li class="menu__mega-capt">WOMEN</li>
+						<li><a href="#">Dresses</a></li>
+						<li><a href="#">Tops</a></li>
+						<li><a href="#">Sweaters/Knits</a></li>
+						<li><a href="#">Jackets/Coats</a></li>
+						<li><a href="#">Blazers</a></li>
+						<li><a href="#">Denim</a></li>
+						<li><a href="#">Leggins/Pants</a><li>
+						<li><a href="#">Skirts/Shorts</a></li>
+						<li><a href="#">Accesories</a></li>
+					</ul>
+				</div>
+				<div class="menu__mega-item">
+					<ul>
+						<li class="menu__mega-capt">WOMEN</li>
+						<li><a href="#">Dresses</a></li>
+						<li><a href="#">Tops</a></li>
+						<li><a href="#">Sweaters/Knits</a></li>
+						<li><a href="#">Jackets/Coats</a></li>
+					</ul>
+				</div>
+				<div class="menu__mega-item">
+					<ul>
+						<li class="menu__mega-capt">WOMEN</li>
+						<li><a href="#">Dresses</a></li>
+						<li><a href="#">Tops</a></li>
+						<li><a href="#">Sweaters/Knits</a></li>
+					</ul>
+				</div>
+				<div class="menu__mega-item">
+					<ul>
+						<li class="menu__mega-capt">WOMEN</li>
+						<li><a href="#">Dresses</a></li>
+						<li><a href="#">Tops</a></li>
+						<li><a href="#">Sweaters/Knits</a></li>
+						<li><a href="#">Jackets/Coats</a></li>
+					</ul>
+				</div>
+				<div class="menu__mega-item">
+					<a href="#"><img class="menu__mega-img" src="img/mega_menu_img.jpg" alt="hot picture"></a>
+				</div>
+			</div>
 		</ul>
 	</nav>
 	<div class="breadcrumb center">
@@ -75,7 +153,7 @@
 	<main class="catalog__main center">
 		<div class="sidebar">
 			<details open>
-				<summary class="sidebar__summary sidebar__summary-active">Category</summary>
+				<summary class="sidebar__summary">Category</summary>
 				<ul class="sidebar__menu">
 					<li><a href="#" class="sidebar__menu-link">Accessories</a></li>
 					<li><a href="#" class="sidebar__menu-link">Bags</a></li>
