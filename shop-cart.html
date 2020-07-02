@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Brand | Single product</title>
+	<title>Brand | Shop cart</title>
 	<script src="https://kit.fontawesome.com/5b0f5e2c72.js" crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style/style.css">
@@ -47,7 +47,7 @@
 	</div>
 	<div class="header__right">
 		<div class="header__cart-container">
-			<a href="shop-cart.html" class="header__cart">
+			<a href="#" class="header__cart">
 				<img class="header__cart-img" src="img/cart.png" alt="cart">
 			</a>
 			<div class="cart_dropdown">
@@ -211,72 +211,38 @@
 		</ul>
 	</nav>
 </div>
-<div class="single__photo-big">
-	<button class="single__photo-change"><i class="fas fa-angle-left"></i></button>
-	<img src="img/product_woman-big.png" alt="product image">
-	<button class="single__photo-change"><i class="fas fa-angle-right"></i></button>
-</div>
-<section class="single__info center">
-	<div class="single__container">
-		<h2 class="single__catalog">WOMEN COLLECTION</h2>
-		<h1 class="single__h">Moschino Cheap And Chic</h1>
-		<p class="single__p">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</p>
-		<div class="single__character">
-			<p>MATERIAL: <span class="single__character-value">COTTON</span></p>
-			<p>DESIGNER: <span class="single__character-value">BINBURHAN</span></p>
-		</div>
-		<p class="single__price">$561</p>
-		<hr class="single__hr">
-		<button class="button single__add">
-			<img class="single__add-img" src="img/cart-pink.png" alt="cart">
-			Add to Cart</button>
-	</div>
-</section>
-<div class="also center">
-	<h3 class="also__h">YOU MAY LIKE ALSO</h3>
-	<div class="product__catalog">
-		<div class="product__item">
-			<a class="also__a" href="product.html"><img class="also__a-img product__item-img" src="img/product_woman1-1.png" alt="product-image"></a>
-			<div class="product__item-text">
-				<a href="product.html" class="product__item-name">Mango People T-shirt</a>
-				<p class="product__item-price">$52.00</p>
-				<p class="product__item-rating">
-					<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
-				</p>
-			</div>
-			<a href="#" class="product__add">Add to Cart</a>
-		</div>
-		<div class="product__item">
-			<a class="also__a" href="product.html"><img class="also__a-img product__item-img" src="img/product_woman2-2.png" alt="product-image"></a>
-			<div class="product__item-text">
-				<a href="product.html" class="product__item-name">Mango People T-shirt</a>
-				<p class="product__item-price">$52.00</p>
-				<p class="product__item-rating">
-					<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></p>
-			</div>
-			<a href="#" class="product__add">Add to Cart</a>
-		</div>
-		<div class="product__item">
-			<a class="also__a" href="product.html"><img class="also__a-img product__item-img" src="img/product_woman3-3.png" alt="product-image"></a>
-			<div class="product__item-text">
-				<a href="product.html" class="product__item-name">Mango People T-shirt</a>
-				<p class="product__item-price">$52.00</p>
-				<p class="product__item-rating">
-					<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></p>
-			</div>
-			<a href="#" class="product__add">Add to Cart</a>
-		</div>
-		<div class="product__item">
-			<a class="also__a" href="product.html"><img class="also__a-img product__item-img" src="img/product_woman4.png" alt="product-image"></a>
-			<div class="product__item-text">
-				<a href="product.html" class="product__item-name">Mango People T-shirt</a>
-				<p class="product__item-price">$52.00</p>
-				<p class="product__item-rating">
-					<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></p>
-			</div>
-			<a href="#" class="product__add">Add to Cart</a>
-		</div>
-	</div>
+<div class="basket__main center">
+	<table class="basket__table">
+		<tr class="basket__h">
+			<th>Product Details</th>
+			<th>Unite Price</th>
+			<th>Quantity</th>
+			<th>shipping</th>
+			<th>Subtotal</th>
+			<th>ACTION</th>
+		</tr>
+		<tr>
+			<td class="basket__product">
+				<div class="basket__product_container">
+					<img class="basket__product_img" src="img/product_man1.png" alt="product">
+				</div>
+				<div class="basket__product_detail">
+					<h3 class="basket__product_name">Mango People T-shirt</h3>
+					<p class="basket__product_detail">Color: Red</p>
+					<p class="basket__product_detail">Size: Xll</p>
+				</div>
+			</td>
+			<td class="basket__price">$150</td>
+			<td class="basket__count">
+				<input type="number">
+			</td>
+			<td class="basket__shipping">FREE</td>
+			<td class="basket__subtotal">$300</td>
+			<td class="basket__delete">
+				<a href="#"><img src="img/x.png" alt="delete_good"></a>
+			</td>
+		</tr>
+	</table>
 </div>
 <div class="subscribe center">
 	<div class="subscribe__item">

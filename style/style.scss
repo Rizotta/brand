@@ -59,7 +59,8 @@ button::-moz-focus-outer, button::-moz-focus-inner {
 
 /* -- Active elements -- */
 .header__search:active .header__search-img, .product__add:active, .single__photo-change:active,
-.header__cart:active .header__cart-img, .product__photo-change:active, .btn_cart:active {
+.header__cart:active .header__cart-img, .product__photo-change:active, .btn_cart:active,
+.cart_delete_cross:active {
 	padding-top: 2px;
 }
 
@@ -234,7 +235,6 @@ button::-moz-focus-outer, button::-moz-focus-inner {
 /* --- end Browse-dropdown --- */
 
 /* --- start Cart-dropdown --- */
-
 
 .header__cart-container {
 	position: relative;
@@ -893,7 +893,12 @@ button::-moz-focus-outer, button::-moz-focus-inner {
 		text-transform: uppercase;
 		padding: 5px;
 		&:hover {
-			border-bottom: 1px solid #636363;
+			border-bottom: 1px solid #f16d7f;
+			//color: #f16d7f;
+		}
+		&:active {
+			//border-bottom: 1px solid #f16d7f;
+			color: #f16d7f;
 		}
 		&-active {
 			font-weight: bold;
@@ -1117,6 +1122,13 @@ button::-moz-focus-outer, button::-moz-focus-inner {
 		border: 1px solid #ebebeb;
 		border-radius: 3px;
 	}
+
+	&__list {
+		color: #c4c4c4;
+		 &__list:last-child {
+			color: #ef5b70;
+		}
+	}
 	&__link {
 		flex-grow: 1;
 		flex-basis: 30px;
@@ -1134,9 +1146,7 @@ button::-moz-focus-outer, button::-moz-focus-inner {
 			color: #ef5b70;
 		}
 	}
-	&__list:first-child, &__list:last-child {
-		color: #ef5b70;
-	}
+
 }
 
 /* --------- CATALOG BANNER --------- */
@@ -1154,7 +1164,7 @@ button::-moz-focus-outer, button::-moz-focus-inner {
 	& .banner__article {
 		padding: 64px 0 90px;
 	}
-	& .banner__article-1, & .banner__article-2, &.banner__article-3 {
+	& .banner__article-1, & .banner__article-2, & .banner__article-3 {
 		background-position: center top;
 	}
 	& .banner__article-container {
@@ -1162,7 +1172,7 @@ button::-moz-focus-outer, button::-moz-focus-inner {
 	}
 }
 
-/* --------- SINGLE PRODUCT --------- */
+/* ------------------- PAGE SINGLE PRODUCT ------------------- */
 
 .single {
 	&__photo {
@@ -1293,6 +1303,28 @@ button::-moz-focus-outer, button::-moz-focus-inner {
 			height: 280px;
 			width: auto;
 			background-color: #e9e9e9;
+		}
+	}
+}
+
+/* ---------------------- PAGE SHOP-CART ---------------------- */
+
+.basket {
+	&__table {
+		margin-top: 90px;
+	}
+	&__h {
+		font-size: 13px;
+		font-weight: bold;
+		color: #222222;
+		letter-spacing: -0.01em;
+		line-height: 20px;
+		text-transform: uppercase;
+	}
+	&__product {
+		&_img {
+			height: 115px;
+			width: 100px;
 		}
 	}
 }
