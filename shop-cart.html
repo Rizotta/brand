@@ -51,34 +51,32 @@
 				<img class="header__cart-img" src="img/cart.png" alt="cart">
 			</a>
 			<div class="cart_dropdown">
-					<div class="good_in_cart">
-						<img src="img/cart_good1.png" alt="good 1" class="good_minifoto">
-						<div class="cart_good_description">
-							<span class="good_in_cart_caption">Rebox Zane</span><br>
-							<img src="img/fivestars.png" alt="stars" class="five_stars"><br>
-							<span class="cart_good_price">1 X $250</span>
-						</div>
-						<div class="cart_delete_cross">
-							<a href="#"><img src="img/x.png" alt="delete_good"></a>
-						</div>
+				<div class="good_in_cart">
+					<img src="img/cart_good1.png" alt="good 1" class="good_minifoto">
+					<div class="cart_good_description">
+						<span class="good_in_cart_caption">Rebox Zane</span><br>
+						<img src="img/fivestars.png" alt="stars" class="five_stars"><br>
+						<span class="cart_good_price">1 X $250</span>
 					</div>
-					<div class="good_in_cart">
-						<img src="img/cart_good2.png" alt="good 2" class="good_minifoto">
-						<div class="cart_good_description">
-							<span class="good_in_cart_caption">Rebox Zane</span><br>
-							<img src="img/fivestars.png" alt="stars" class="five_stars"><br>
-							<span class="cart_good_price">1 X $250</span>
-						</div>
-						<div class="cart_delete_cross">
-							<a href="#"><img src="img/x.png" alt="delete_good"></a>
-						</div>
+					<div class="cart_delete_cross">
+						<a href="#"><img src="img/x.png" alt="delete_good"></a>
 					</div>
-					<div class="cart_total">
-						TOTAL&nbsp;:<span id="total_cost"> $500</span>
-					</div>
-					<div class="btn_cart">CHECKOUT</div>
-					<div class="btn_cart">GO TO CART</div>
 				</div>
+				<div class="good_in_cart">
+					<img src="img/cart_good2.png" alt="good 2" class="good_minifoto">
+					<div class="cart_good_description">
+						<span class="good_in_cart_caption">Rebox Zane</span><br>
+						<img src="img/fivestars.png" alt="stars" class="five_stars"><br>
+						<span class="cart_good_price">1 X $250</span>
+					</div>
+					<div class="cart_delete_cross">
+						<a href="#"><img src="img/x.png" alt="delete_good"></a>
+					</div>
+				</div>
+				<div class="cart_total">
+					TOTAL&nbsp;:<span id="total_cost"> $500</span>
+				</div><div class="btn_cart">CHECKOUT</div><a class="btn_cart" href="shop-cart.html">GO TO CART</a>
+			</div>
 		</div>
 		<button class="button header__button">My account <i class="fas fa-sort-down"></i></button>
 	</div>
@@ -211,7 +209,7 @@
 		</ul>
 	</nav>
 </div>
-<div class="basket__main center">
+<div class="basket center">
 	<table class="basket__table">
 		<tr class="basket__h">
 			<th>Product Details</th>
@@ -223,18 +221,54 @@
 		</tr>
 		<tr>
 			<td class="basket__product">
-				<div class="basket__product_container">
-					<img class="basket__product_img" src="img/product_man1.png" alt="product">
-				</div>
+				<img class="basket__product_img" src="img/product_man1.png" alt="product">
 				<div class="basket__product_detail">
 					<h3 class="basket__product_name">Mango People T-shirt</h3>
-					<p class="basket__product_detail">Color: Red</p>
-					<p class="basket__product_detail">Size: Xll</p>
+					<p class="basket__product_detail"><span>Color:</span> Red</p>
+					<p class="basket__product_detail"><span>Size:</span> Xll</p>
 				</div>
 			</td>
 			<td class="basket__price">$150</td>
 			<td class="basket__count">
-				<input type="number">
+				<input class="basket__count_input" type="number" min="1" max="50" value="2" oninput="this.value = this.value.replace(/\D/g, '')">
+			</td>
+			<td class="basket__shipping">FREE</td>
+			<td class="basket__subtotal">$300</td>
+			<td class="basket__delete">
+				<a href="#"><img src="img/x.png" alt="delete_good"></a>
+			</td>
+		</tr>
+		<tr>
+			<td class="basket__product">
+				<img class="basket__product_img" src="img/product_man2.png" alt="product">
+				<div class="basket__product_detail">
+					<h3 class="basket__product_name">Mango People T-shirt</h3>
+					<p class="basket__product_detail"><span>Color:</span> Red</p>
+					<p class="basket__product_detail"><span>Size:</span> Xll</p>
+				</div>
+			</td>
+			<td class="basket__price">$150</td>
+			<td class="basket__count">
+				<input class="basket__count_input" type="number" min="1" max="50" value="2" oninput="this.value = this.value.replace(/\D/g, '')">
+			</td>
+			<td class="basket__shipping">FREE</td>
+			<td class="basket__subtotal">$300</td>
+			<td class="basket__delete">
+				<a href="#"><img src="img/x.png" alt="delete_good"></a>
+			</td>
+		</tr>
+		<tr>
+			<td class="basket__product">
+				<img class="basket__product_img" src="img/product_man8.png" alt="product">
+				<div class="basket__product_detail">
+					<h3 class="basket__product_name">Mango People T-shirt</h3>
+					<p class="basket__product_detail"><span>Color:</span> Red</p>
+					<p class="basket__product_detail"><span>Size:</span> Xll</p>
+				</div>
+			</td>
+			<td class="basket__price">$150</td>
+			<td class="basket__count">
+				<input class="basket__count_input" type="number" min="1" max="50" value="2" oninput="this.value = this.value.replace(/\D/g, '')">
 			</td>
 			<td class="basket__shipping">FREE</td>
 			<td class="basket__subtotal">$300</td>
@@ -243,6 +277,31 @@
 			</td>
 		</tr>
 	</table>
+	<div class="basket__buttons">
+		<button class="button button_white">CLEAR SHOPPING CART</button>
+		<button class="button button_white">CONTINUE SHOPPING</button>
+	</div>
+</div>
+<div class="cart-contact center">
+	<form class="cart-contact__item">
+		<h3 class="cart-contact__h">Shipping Adress</h3>
+		<input type="text" placeholder="Bangladesh">
+		<input type="text" placeholder="State">
+		<input type="text" placeholder="Postcode / Zip">
+		<button class="button button_white">GET A QUOTE</button>
+
+	</form>
+	<form class="cart-contact__item">
+		<h3 class="cart-contact__h">coupon discount</h3>
+		<p class="cart-contact__p">Enter your coupon code if you have one</p>
+		<input type="text" placeholder="State">
+		<button class="button button_white">APPLY COUPON</button>
+	</form>
+	<div class="cart-contact__total">
+		<p class="cart-contact__total1">Sub total $900</p>
+		<p class="cart-contact__total2">GRAND TOTAL <span>$900</span></p>
+		<button class="button">PROCEED TO CHECKOUT</button>
+	</div>
 </div>
 <div class="subscribe center">
 	<div class="subscribe__item">
